@@ -1,0 +1,11 @@
+---
+version: '2'
+
+services:
+    web:
+        image: web
+    
+    proxy:
+        image: proxy
+        ports:
+              - "8080:80"
