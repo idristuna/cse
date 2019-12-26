@@ -1,11 +1,14 @@
 ---
-version: '2'
+version: '3.7'
 
 services:
     web:
         image: web
+        container_name: web
     
     proxy:
         image: proxy
+        container_name: proxy
         ports:
               - "8080:80"
+              - "8443:443"
