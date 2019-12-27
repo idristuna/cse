@@ -1,5 +1,4 @@
 FROM nginx:alpine
-
 RUN apk update && apk add bash openssl apache2-utils
 RUN rm /etc/nginx/conf.d/* 
 RUN mkdir /etc/nginx/ssl
